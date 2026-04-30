@@ -1,0 +1,345 @@
+/*Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial ;
+    background-color: rgb( 0 0 0 / 50%);
+}
+ul{
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*== small ==*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*== medium ==*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*== large ==*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*end Global Rules */
+/*Start header */
+/*== Start header in mobile*/
+@media (max-width: 768px) {
+header .container {
+ top: 10px;
+ display: flex;
+ height: 60px;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+ background-color: rgb(0 0 0 / 50%);
+ border-radius: 30px;
+ min-width: 50px;
+ margin: 20px;
+ z-index: 2000;
+ }
+ header .name {
+   text-align: center;
+   padding: 30px;
+   font-size: 20px;
+ }
+ header nav {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+ .minu-icon{
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 4px;
+ }
+ header nav .minu-icon div{
+   display: block;
+   background: #f9f5f2;
+   height: 3px;
+   border-radius: 3px;
+   transition: 0.3s;
+ }
+ header nav .minu-icon div:nth-child(1){width:18px}
+ header nav .minu-icon div:nth-child(2){width:25px}
+ header nav .minu-icon div:nth-child(3){width:12px}
+ header nav .minu-icon:hover div:nth-child(1){width:25px}
+ header nav .minu-icon:hover div:nth-child(3){width:25px}
+ 
+  header nav ul {
+    display: none;
+    background: white;
+  }
+  header nav .minu-icon:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    align-items: flex-end;
+    background-color: rgb( 0 0 0 / 50%);
+    z-index: 2000;
+  }
+  header nav .minu-icon:hover + ul {
+    padding: 40px 15px;
+    gap: 15px;
+  }
+  header nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+    color: #f9f5f2;
+  }
+ header nav .form {
+   width: 30px;
+   position: relative;
+   margin-left: 8px;
+   padding-left: 8px;
+   border-left: 2px solid #f9f5f2;
+ }
+ header nav .form i {
+   color: #f9f5f2;
+   
+ }
+ .mode {
+  top: 20px;
+  right: 20px;
+  background: rgb( 0 0 0 / 50%);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #1e293b;
+  color: white;
+}
+.dark header .container{
+   background-color: #0f172a;
+}
+.dark .card {
+  background: #0f172a;
+  
+}
+/* start background top */
+/* background black */
+.dark .nn {
+  display: flex;
+  position: relative;
+  bottom: 100px;
+  
+}
+.dark .nn img {
+  width: 100%;
+  filter: brightness(60%);
+  border-radius: 0 0 30px 30px;
+}
+.nn {
+  display: none;
+  
+}
+/* background white */
+.nnn{
+  position: relative;
+  bottom: 100px;
+}
+.nnn img {
+  width: 100%;
+  filter: brightness(60%);
+  border-radius: 0 0 30px 30px;
+}
+.dark .nnn{
+  display: none;
+}
+}
+
+/*== end background top*/
+
+/*== end header in mobile*/
+
+/*== start header in computer*/
+@media (min-width: 1200px) {
+header .container {
+ top: 50px;
+ display: flex;
+ height: 90px;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+ background-color: rgb(0 0 0 /50%);
+ border-radius: 50px;
+ min-width: 50px;
+ z-index: 2000;
+ }
+ header .name {
+   text-align: center;
+   padding: 40px;
+   font-size: 30px;
+ }
+ header nav {
+   display: inline-block;
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+ header nav ul {
+   display: flex;
+ }
+ header nav ul li a {
+    padding: 40px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    color: #f9f5f2;
+  }
+   .mode {
+  top: 20px;
+  right: 20px;
+  background: rgb( 0 0 0 / 50%);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #1e293b;
+  color: white;
+}
+.dark header .container{
+   background-color: #0f172a;
+}
+.dark .card {
+  background: #0f172a;
+  
+}
+/* start background top */
+/* background black */
+.dark .nn {
+  display: flex;
+  position: relative;
+  bottom: 100px;
+  
+}
+.dark .nn img {
+  width: 100%;
+  filter: brightness(60%);
+  border-radius: 0 0 30px 30px;
+}
+.nn {
+  display: none;
+  
+}
+/* background white */
+.nnn{
+  position: relative;
+  bottom: 100px;
+}
+.nnn img {
+  width: 100%;
+  filter: brightness(60%);
+  border-radius: 0 0 30px 30px;
+}
+.dark .nnn{
+  display: none;
+}
+}
+
+/*== end background top*/
+
+/*== end header in computer*/
+
+/*end header */
+
+
+
+.copy-btn {
+  display: none;
+  padding: 10px;
+  background: rgb(0 0 0 /50%);
+  border: none;
+  margin: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+
+/* شكل بسيط للكارد */
+.card {
+  background: rgb(0 0 0 / 50%);
+  padding: 15px;
+  border-radius: 20px 20px 10px 10px;
+  margin: 20px 20px;
+}
+.card h3 {
+  text-align: center;
+}
+.button-html {
+  padding: 10px;
+  background: rgb(0 0 0 /50%);
+  border: none;
+  margin: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+.button-css {
+  padding: 10px;
+  background: rgb(0 0 0 /50%);
+  border: none;
+  margin: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+.dark .button-css,
+.dark .button-html,
+.dark .copy-btn{
+  color: white;
+}
+ .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+pre {
+  display: none;
+  background: black;
+  color: #00ffcc;
+  padding: 10px;
+  border-radius: 8px;
+}
+}
